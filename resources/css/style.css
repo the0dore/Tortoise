@@ -1,0 +1,198 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: Helvetica;
+    line-height: 1.4;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;    
+}
+
+/*Main Banner Section*/
+.main-banner {
+    background-image: url(../images/glasses-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 31rem;    
+}
+
+.main-banner .container {
+    flex-direction: column;
+}
+
+.top-bar {    
+    margin: 1rem 2rem;
+    color: white;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 1.5rem;
+    padding: 0 1rem;
+}
+
+.navigation span {
+    padding: 0 1rem;
+}
+
+#mobile {
+    display: none;
+}
+
+.headline {
+    align-self: flex-end;
+    margin-top: 10rem;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    background-color: white;
+    padding: 1.5rem 5rem;    
+}
+
+/*Icons Section*/
+.icons.container {
+    justify-content: center;
+}
+
+.icons .item {
+    height: 8rem;
+    width: 5rem;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.item img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+.item:first-child img {
+    width: 3.5rem;
+}
+
+/*Info Section*/
+.info.container {
+    justify-content: center;
+}
+
+.info .item {
+    margin-right: 5%;
+    width: 35%;
+}
+
+.info h4 {
+    font-weight: bold;
+    color: white;
+    background-color: cadetblue;
+    width: 10rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.info p {
+    padding-top: 1rem;
+}
+
+/*Footer*/
+footer {
+    background: azure;
+    margin-top: 5rem;
+}
+
+footer .logo {
+    padding: 4rem 3rem;  
+}
+
+
+/*For Tablet*/
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
+    .main-banner {
+        height: 22rem;
+    }
+    .top-bar {    
+        margin: 0;
+    }
+    .headline {
+        margin: 5rem 2rem;
+        font-size: 1.33rem;
+        padding: 0.75rem 4rem;        
+    } 
+}
+
+/*For Mobile*/
+@media only screen and (max-width: 650px) {
+    .main-banner {
+        height: 17rem;
+        background-position: 20%;
+    }
+    .top-bar span {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    .headline {
+        margin: 9rem 0;
+        font-size: 1rem;
+        padding: 1rem;
+        align-self: stretch;
+        text-align: center;
+    }
+    .icons.container {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.77rem;
+        margin: 2.23rem 0;
+    }
+    .icons .item {
+        margin: 1.54rem;
+        height: auto;
+    }
+    .info.container {
+        flex-direction: column;       
+    }
+    .info .item {
+        width: 100%;
+        overflow: hidden;
+    }
+    .info h4 {
+        width: 100%;
+    }
+    .info p {
+        padding: 1rem 0.5rem;
+        font-size: 0.77rem;
+    }
+    .info .item:first-child {
+        margin-bottom: 4rem;
+    }
+    footer span {
+        display: none;
+    }
+    footer .container {
+        justify-content: center;
+    }
+}
+
+
+
